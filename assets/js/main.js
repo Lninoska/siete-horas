@@ -7,7 +7,7 @@ function mostrarhorachile() {
         minute: '2-digit',
         second: '2-digit',
     })
-    document.getElementsByClassName("hora-chilena")[0].innerHTML = `${horachilena}`;
+    document.getElementsByClassName("hora-chilena")[0].innerHTML = `${horachilena}`;    
 }
 function mostrarhorafrancia (){
     let hora = new Date ()
@@ -78,7 +78,7 @@ function mostrarhoracoreana(){
 }
 
 
-setTimeout(() => setInterval(mostrarhorachile, 1000), 0);
+setTimeout(mostrarhorachile, 1000);
 setTimeout(() => setInterval(mostrarhorafrancia, 1000), 4000);
 setTimeout(() => setInterval(mostrarhoraUK, 1000), 8000);
 setTimeout(() => setInterval(mostrarhoraNY, 1000), 12000);
